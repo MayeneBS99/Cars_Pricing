@@ -1,0 +1,10 @@
+# ignore the virtul environement folder
+cars_price_env/
+*pyc
+__pycache__/
+
+# ignore file for compressing
+src/model/compressed_model.py
+
+# ignore original model from git index 
+src/model/rf_model.joblib
