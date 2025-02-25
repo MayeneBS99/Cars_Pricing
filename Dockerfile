@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.11-slim
 
 # repertoire de travail
 WORKDIR /API
@@ -10,7 +10,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY src/ ./src
-COPY API/ ./API
+COPY src/API/ ./API
 
 EXPOSE 8000
 
